@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { NextIntlClientProvider } from "next-intl";
 import { getMessages } from "next-intl/server";
-// import { routing } from "@/i18n/routing";
+import { routing } from "@/i18n/routing";
 import "../globals.css";
 
 export const metadata: Metadata = {
@@ -10,9 +10,9 @@ export const metadata: Metadata = {
     "Full-stack web developer based in Vancouver, BC. Bilingual EN/JP",
 };
 
-// export function generageStaticParams() {
-//   return routing.locales.map((locale) => ({locale}));
-// }
+export function generageStaticParams() {
+  return routing.locales.map((locale) => ({ locale }));
+}
 
 export default async function LocaleLayout({
   children,
