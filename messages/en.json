@@ -1,0 +1,68 @@
+{
+  "nav": {
+    "about": "About",
+    "projects": "Projects",
+    "skills": "Skills",
+    "contact": "Contact"
+  },
+  "hero": {
+    "label": "Full-Stack Web Developer",
+    "heading1": "Building for the",
+    "heading2": "web,",
+    "heading3": "with empathy.",
+    "bio": "From 7 years in hospitality to full-stack development — I bring user empathy, attention to detail, and bilingual communication to every project.",
+    "tag_bilingual": "EN / JP Bilingual",
+    "cta_work": "View My Work",
+    "cta_resume": "Download Resume"
+  },
+  "projects": {
+    "section_label": "02 — Projects",
+    "section_title": "Selected Work",
+    "live": "Live →",
+    "github": "GitHub →",
+    "items": {
+      "menucraft": {
+        "type": "Full-Stack App",
+        "description": "Restaurant menu management with customer-facing browser and staff CRUD portal. Mobile-first UI with real-time data fetching."
+      },
+      "munchmatch": {
+        "type": "Self-Directed",
+        "description": "Tinder-style restaurant recommendation app with swipe interactions, custom auth, and a RESTful API."
+      },
+      "musubiya": {
+        "type": "Freelance Client",
+        "description": "Production website for a Vancouver-based Japanese client — 結び屋. Designed and developed to brief, deployed live."
+      }
+    }
+  },
+  "skills": {
+    "section_label": "03 — Skills",
+    "section_title": "Technical Stack",
+    "groups": {
+      "languages": "Languages",
+      "frameworks": "Frameworks",
+      "databases": "Databases",
+      "tools": "Tools"
+    }
+  },
+  "contact": {
+    "section_label": "04 — Contact",
+    "section_title": "Get In Touch",
+    "bio": "Open to new opportunities in Vancouver, BC. I bring a unique perspective — hospitality-trained, bilingual, and passionate about building products people love to use.",
+    "github": "GitHub",
+    "linkedin": "LinkedIn",
+    "location": "Location",
+    "location_value": "Vancouver, BC",
+    "form_name": "Your name",
+    "form_email": "your@email.com",
+    "form_message": "Your message...",
+    "form_submit": "Send Message"
+  },
+  "footer": {
+    "built": "Built with Next.js + TypeScript"
+  },
+  "language_switcher": {
+    "en": "EN",
+    "ja": "JP"
+  }
+}

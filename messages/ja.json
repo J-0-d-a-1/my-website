@@ -1,0 +1,68 @@
+{
+  "nav": {
+    "about": "自己紹介",
+    "projects": "制作物",
+    "skills": "スキル",
+    "contact": "お問い合わせ"
+  },
+  "hero": {
+    "label": "フルスタック・ウェブデベロッパー",
+    "heading1": "共感を持って、",
+    "heading2": "ウェブを",
+    "heading3": "作る。",
+    "bio": "7年間の接客業からフルスタック開発へ — ユーザー目線・細部へのこだわり・日英バイリンガルのコミュニケーションを全てのプロジェクトに活かします。",
+    "tag_bilingual": "日英バイリンガル",
+    "cta_work": "制作物を見る",
+    "cta_resume": "履歴書をダウンロード"
+  },
+  "projects": {
+    "section_label": "02 — 制作物",
+    "section_title": "主な作品",
+    "live": "サイトを見る →",
+    "github": "GitHub →",
+    "items": {
+      "menucraft": {
+        "type": "フルスタックアプリ",
+        "description": "お客様向けメニュー閲覧とスタッフ向けCRUDポータルを備えたレストランメニュー管理アプリ。モバイルファーストでリアルタイムデータ取得に対応。"
+      },
+      "munchmatch": {
+        "type": "自主制作",
+        "description": "スワイプ操作によるレストラン推薦アプリ。カスタム認証とRESTful APIを実装。"
+      },
+      "musubiya": {
+        "type": "フリーランス案件",
+        "description": "バンクーバーの日系クライアント「結び屋」のウェブサイトを設計・開発し、本番環境にデプロイ。"
+      }
+    }
+  },
+  "skills": {
+    "section_label": "03 — スキル",
+    "section_title": "技術スタック",
+    "groups": {
+      "languages": "言語",
+      "frameworks": "フレームワーク",
+      "databases": "データベース",
+      "tools": "ツール"
+    }
+  },
+  "contact": {
+    "section_label": "04 — お問い合わせ",
+    "section_title": "ご連絡ください",
+    "bio": "バンクーバーにて新しい機会を求めています。接客業出身のバイリンガル開発者として、使いやすいプロダクト作りに情熱を持っています。",
+    "github": "GitHub",
+    "linkedin": "LinkedIn",
+    "location": "所在地",
+    "location_value": "バンクーバー、BC州",
+    "form_name": "お名前",
+    "form_email": "メールアドレス",
+    "form_message": "メッセージ",
+    "form_submit": "送信する"
+  },
+  "footer": {
+    "built": "Next.js + TypeScript で制作"
+  },
+  "language_switcher": {
+    "en": "EN",
+    "ja": "JP"
+  }
+}
