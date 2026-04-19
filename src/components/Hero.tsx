@@ -18,7 +18,7 @@ export default function Hero() {
         {t("label")}
       </p>
 
-      <h1 className="font-serif text-[claamp(2.8rem,5vw,4.5rem)] leading-[1.05] mb-4">
+      <h1 className="font-serif text-[clamp(2.8rem,5vw,4.5rem)] leading-[1.05] mb-4">
         {t("heading1")}
         <br />
         <em className="italic text-accent-gold">{t("heading2")}</em>
