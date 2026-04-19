@@ -1,8 +1,19 @@
 @import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Mono:wght@400;500&family=Outfit:wght@300;400;500&display=swap");
 
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
+@reference "tailwindcss";
+
+@theme {
+  --color-bg: #0e0e0e;
+  --color-bg-2: #161616;
+  --color-bg-3: #1e1e1e;
+  --color-accent-gold: #c8a96e;
+  --color-accent-teal: #7eb8a0;
+  --color-muted: #888888;
+  --font-serif: "DM Serif Display", serif;
+  --font-mono: "DM Mono", monospace;
+  --font-sans: "Outfit", sans-serif;
+}
 
 @layer base {
   html {
@@ -10,12 +21,12 @@
   }
 
   body {
-    @apply bg-bg text[#f0ede6] font-sans font-light;
+    @apply bg-[#0e0e0e] text-[#f0ede6] font-sans font-light;
   }
 }
 
 @layer utilities {
   .section-label {
-    @apply text-[0.7rem] font-mono tracking-[0.18em] uppercase text-accent-gold;
+    @apply text-[0.7rem] font-mono tracking-[0.18em] uppercase text-[#c8a96e];
   }
 }

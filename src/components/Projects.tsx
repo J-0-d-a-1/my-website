@@ -42,7 +42,7 @@ export default function Project() {
             key={project.slug}
             project={project}
             type={t(`items.${project.slug}.type`)}
-            description={t(`items.${project.slug}.descrioption`)}
+            description={t(`items.${project.slug}.description`)}
             liveLabel={t("live")}
             githubLabel={t("github")}
           />

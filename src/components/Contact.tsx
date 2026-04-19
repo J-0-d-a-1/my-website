@@ -23,7 +23,7 @@ export default function Contact() {
             </a>
           </div>
           <div>
-            <span>{t("linedin")}</span>
+            <span>{t("linkedin")}</span>
             <a href="https://linkedin.com/in/jumpei-oda">
               linkedin.com/in/jumpei-oda
             </a>

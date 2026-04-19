@@ -1,4 +1,4 @@
-import { useTranslations } from "use-intl";
+import { useTranslations } from "next-intl";
 
 const techTags = [
   "React",
@@ -19,9 +19,9 @@ export default function Hero() {
       </p>
 
       <h1 className="font-serif text-[claamp(2.8rem,5vw,4.5rem)] leading-[1.05] mb-4">
-        {t("headding1")}
+        {t("heading1")}
         <br />
-        <em className="italic text-accent-gold">{t("headding2")}</em>
+        <em className="italic text-accent-gold">{t("heading2")}</em>
         {t("heading3")}
       </h1>
 
