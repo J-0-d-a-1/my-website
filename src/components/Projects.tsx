@@ -31,12 +31,12 @@ export default function Project() {
   const t = useTranslations("projects");
 
   return (
-    <section id="projects">
-      <div>
-        <span>{t("section_label")}</span>
-        <h2>{t("section_title")}</h2>
+    <section id="projects" className="max-w-5xl mx-auto px-10 pt-12">
+      <div className="flex items-baseline gap-4 mb-10 pb-4 border-b border-white/[0.08]">
+        <span className="section-label">{t("section_label")}</span>
+        <h2 className="font-serif text-2xl">{t("section_title")}</h2>
       </div>
-      <div>
+      <div className="grid grid-cols-3 gap-5">
         {projectList.map((project) => (
           <ProjectCard
             key={project.slug}
