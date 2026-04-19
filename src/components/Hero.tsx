@@ -29,16 +29,32 @@ export default function Hero() {
         {t("bio")}
       </p>
 
-      <div>
-        <span>{t("tag_bilingual")}</span>
+      <div className="flex flex-wrap gap-2 mb-8">
+        <span className="text-[0.7rem] font-mono px-3 py-1.5 rounded-full border border-accent-gold text-accent-gold tracking-[0.05em]">
+          {t("tag_bilingual")}
+        </span>
         {techTags.map((tag) => (
-          <span key={tag}>{tag}</span>
+          <span
+            key={tag}
+            className="text-[0.7rem] font-mono px-3 py-1.5 rounded-full border border-white/[0.08] text-muted tracking-[0.05em]"
+          >
+            {tag}
+          </span>
         ))}
       </div>
 
       <div className="flex gap-4">
-        <a href="#projects">{t("cta_work")}</a>
-        <a href="/Jumpei_Oda_Resume.pdf" download>
+        <a
+          href="#projects"
+          className="px-6 py-2.5 bg-accent-gold text-bg text-sm font-medium tracking-wide rounded-sm hover:opacity-90 transition-opacity"
+        >
+          {t("cta_work")}
+        </a>
+        <a
+          href="/Jumpei_Oda_Resume.pdf"
+          download
+          className="px-6 py-2.5 bg-transparent text-[#f0ede6] text-sm border border-white/[0.08] rounded-sm hover:border-white/20 transition-colors"
+        >
           {t("cta_resume")}
         </a>
       </div>
