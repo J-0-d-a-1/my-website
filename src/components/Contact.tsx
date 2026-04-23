@@ -1,7 +1,26 @@
+"use client";
+
 import { useTranslations } from "next-intl";
+import { useRef, useState } from "react";
+import { sendEmail } from "@/app/actions/sendEmail";
 
 export default function Contact() {
   const t = useTranslations("contact");
+  const [status, setStatus] = useState<
+    "idle" | "loading" | "success" | "error"
+  >("idle");
+  const formRef = useRef<HTMLFormElement>(null);
+
+  async function handleSubmit(formData: FormData) {
+    setStatus("loading");
+    const result = await sendEmail(formData);
+    if (result.success) {
+      setStatus("success");
+      formRef.current?.reset();
+    } else {
+      setStatus("error");
+    }
+  }
 
   return (
     <section id="contact" className="max-w-5xl mx-auto px-10 pt-12">
@@ -44,28 +63,47 @@ export default function Contact() {
           </div>
         </div>
 
-        <form className="flex flex-col gap-3">
+        <form
+          ref={formRef}
+          action={handleSubmit}
+          className="flex flex-col gap-3"
+        >
           <input
             type="text"
+            name="name"
             placeholder={t("form_name")}
-            className="bg-bg-2 border border-white/[0.08] rounded-sm px-4 py-3 text-sm text-[#f0ede6] placeholder:text-muted outline-none focus:border-white/2- transition-colors"
+            className="bg-bg-2 border border-white/[0.08] rounded-sm px-4 py-3 text-sm text-[#f0ede6] placeholder:text-muted outline-none focus:border-white/20 transition-colors"
           />
           <input
             type="email"
+            name="email"
             placeholder={t("form_email")}
             className="bg-bg-2 border border-white/[0.08] rounded-sm px-4 py-3 text-sm text-[#f0ede6] placeholder:text-muted outline-none focus:border-white/20 transition-colors"
           />
           <textarea
+            name="message"
             placeholder={t("form_message")}
             rows={4}
             className="bg-bg-2 border border-white/[0.08] rounded-sm px-4 py-3 text-sm text-[#f0ede6] placeholder:text-muted outline-none focus:border-white/20 transition-colors resize-none"
           ></textarea>
           <button
             type="submit"
-            className="py-3 bg-accent-gold text-bg text-sm font-medium tracking-wide rounded-sm hover:opacity-90 transition-opacity"
+            disabled={status === "loading"}
+            className="py-3 bg-accent-gold text-bg text-sm font-medium tracking-wide rounded-sm hover:opacity-90 transition-opacity disabled:opacity-50"
           >
             {t("form_submit")}
           </button>
+
+          {status === "success" && (
+            <p className="text-sm text-accent-teal text-center">
+              Message sent successfully!
+            </p>
+          )}
+          {status === "error" && (
+            <p className="text-sm text-red-400 text-center">
+              Something went wrong. Please try again.
+            </p>
+          )}
         </form>
       </div>
     </section>
