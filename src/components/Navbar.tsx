@@ -1,6 +1,8 @@
 import { useTranslations } from "next-intl";
 import Link from "next/link";
 import LanguageSwitcher from "@/components/LanguageSwitcher";
+import Image from "next/image";
+import IconDark from "../../public/icon-dark.svg";
 
 export default function Navbar() {
   const t = useTranslations("nav");
@@ -14,9 +16,7 @@ export default function Navbar() {
 
   return (
     <nav className="flex justify-between items-center px-10 py-6 border-b border-white/[0.08">
-      <span className="font-serif text-xl text-accent-gold tracking-wide">
-        Jumpei Oda
-      </span>
+      <Image src={IconDark} alt="Jo" width={40} height={40} />
       <div className="flex items-center gap-8">
         <ul className="flex gap-8">
           {navLinks.map((link) => (

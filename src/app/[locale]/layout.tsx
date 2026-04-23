@@ -8,6 +8,9 @@ export const metadata: Metadata = {
   title: "Jumpei Oda - Full-Stack Web Developer",
   description:
     "Full-stack web developer based in Vancouver, BC. Bilingual EN/JP",
+  icons: {
+    icon: "/favicon.svg",
+  },
 };
 
 export function generateStaticParams() {
