@@ -13,7 +13,7 @@ export default function Hero() {
   const t = useTranslations("hero");
 
   return (
-    <section className="max-w-5xl mx-auto px-10 pt-20 pb-16">
+    <section className="max-w-5xl mx-auto px-6 md:px-10 pt-16 md:pt-20 md:pb-16">
       <p className="text-[0.72rem] font-mono tracking-[0.2em] uppercase text-accent-gold mb-5">
         {t("label")}
       </p>
@@ -43,17 +43,17 @@ export default function Hero() {
         ))}
       </div>
 
-      <div className="flex gap-4">
+      <div className="flex flex-col sm:flex-row gap-3 md:gap-4">
         <a
           href="#projects"
-          className="px-6 py-2.5 bg-accent-gold text-bg text-sm font-medium tracking-wide rounded-sm hover:opacity-90 transition-opacity"
+          className="px-6 py-2.5 bg-accent-gold text-bg text-sm font-medium tracking-wide rounded-sm hover:opacity-90 transition-opacity text-center"
         >
           {t("cta_work")}
         </a>
         <a
           href="/Jumpei_Oda_Resume.pdf"
           download
-          className="px-6 py-2.5 bg-transparent text-[#f0ede6] text-sm border border-white/[0.08] rounded-sm hover:border-white/20 transition-colors"
+          className="px-6 py-2.5 bg-transparent text-[#f0ede6] text-sm border border-white/[0.08] rounded-sm hover:border-white/20 transition-colors text-center"
         >
           {t("cta_resume")}
         </a>
