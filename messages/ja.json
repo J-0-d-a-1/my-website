@@ -32,6 +32,10 @@
       "musubiya": {
         "type": "フリーランス案件",
         "description": "バンクーバーの日系クライアント「結び屋」のウェブサイトを設計・開発し、本番環境にデプロイ。"
+      },
+      "github_search": {
+        "type": "個人開発",
+        "description": "TypeScript・カスタムフック・Context APIを使用したGitHubユーザー検索アプリ。ダーク/ライトモード切替とGitHub REST API連携機能を実装。"
       }
     }
   },

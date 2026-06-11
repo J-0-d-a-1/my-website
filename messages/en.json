@@ -32,6 +32,10 @@
       "musubiya": {
         "type": "Freelance Client",
         "description": "Production website for a Vancouver-based Japanese client — 結び屋. Designed and developed to brief, deployed live."
+      },
+      "github_search": {
+        "type": "Self-Directed",
+        "description": "GitHub user search app with TypeScript, custom hooks, Copntext API for dark/light mode, and real GitHub REST API integration."
       }
     }
   },

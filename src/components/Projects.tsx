@@ -19,6 +19,14 @@ const projectList = [
     dotColor: "bg-[#a899d0]",
   },
   {
+    slug: "github_search",
+    name: "GitHub User Search",
+    stack: ["React", "TypeScript", "Context API", "Vite", "Vercel"],
+    liveUrl: "https://github-user-search-one-ochre.vercel.app",
+    githubUrl: "https://github.com/J-0-d-a-1/github-user-search",
+    dotColor: "bg-accent-teal",
+  },
+  {
     slug: "munchmatch",
     name: "MunchMatch",
     stack: ["React", "Ruby on Rails", "PostgreSQL", "SCSS"],
@@ -36,7 +44,7 @@ export default function Project() {
         <span className="section-label">{t("section_label")}</span>
         <h2 className="font-serif text-2xl">{t("section_title")}</h2>
       </div>
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
         {projectList.map((project) => (
           <ProjectCard
             key={project.slug}
