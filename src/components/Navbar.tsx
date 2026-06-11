@@ -15,10 +15,10 @@ export default function Navbar() {
   ] as const;
 
   return (
-    <nav className="flex justify-between items-center px-10 py-6 border-b border-white/[0.08">
+    <nav className="flex justify-between items-center px-6 md:px-10 py-6 border-b border-white/[0.08]">
       <Image src={IconDark} alt="Jo" width={40} height={40} />
-      <div className="flex items-center gap-8">
-        <ul className="flex gap-8">
+      <div className="flex items-center gap-4 md:gap-8">
+        <ul className="hidden md:flex gap-8">
           {navLinks.map((link) => (
             <li key={link.key}>
               <Link
