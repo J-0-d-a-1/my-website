@@ -28,10 +28,10 @@ export default function Contact() {
         <span className="section-label">{t("section_label")}</span>
         <h2 className="font-serif text-2xl">{t("section_title")}</h2>
       </div>
-      <div className="grid grid-cols-2 gap-8 items-start">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-start">
         <div>
           <p className="text-base text-muted leading-[1.9] mb-6">{t("bio")}</p>
-          <div className="flex items-center gap-3 text-sm">
+          <div className="flex items-center gap-3 text-sm flex-wrap">
             <span className="text-[0.68rem] font-mono tracking-[0.12em] uppercase text-muted w-20">
               {t("github")}
             </span>

@@ -43,7 +43,7 @@ export default function Skills() {
               {group.skills.map((skill, i) => (
                 <li
                   key={skill}
-                  className={`text-[0.8rem] text-muted py-1.5 ${i < group.skills.length - 1 ? "border-b border-white/[0.08]" : ""}`}
+                  className={`text-[0.8rem] text-muted py-1.5 wrap-break-word ${i < group.skills.length - 1 ? "border-b border-white/[0.08]" : ""}`}
                 >
                   {skill}
                 </li>
